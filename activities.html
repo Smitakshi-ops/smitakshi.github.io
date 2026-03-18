@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Professional Activities | Smitakshi Goswami</title>
+
   <style>
     body {
       margin: 0;
@@ -22,13 +23,9 @@
       width: 280px;
       background-color: #a3bfa8;
       padding: 30px 20px;
-      box-sizing: border-box;
       text-align: center;
       position: fixed;
-      top: 0;
-      left: 0;
       height: 100vh;
-      overflow-y: auto;
       border-right: 1px solid #8fae96;
     }
 
@@ -37,38 +34,27 @@
       height: 150px;
       object-fit: cover;
       border-radius: 10px;
-      display: block;
-      margin: 0 auto 20px;
+      margin-bottom: 20px;
     }
 
     .sidebar h1 {
-      font-size: 28px;
-      margin: 10px 0 8px;
-      color: #1f2a24;
+      font-size: 26px;
+      margin-bottom: 6px;
     }
 
     .sidebar p {
       font-size: 14px;
-      line-height: 1.6;
-      margin-bottom: 24px;
-      color: #1f2a24;
-    }
-
-    .nav-links,
-    .social-links {
-      margin-top: 18px;
+      margin-bottom: 20px;
     }
 
     .nav-links a,
     .social-links a {
       display: block;
+      margin: 6px 0;
       text-decoration: none;
       color: #1f2a24;
-      padding: 10px 12px;
-      margin: 8px 0;
-      border-radius: 8px;
-      transition: background-color 0.2s ease, color 0.2s ease;
-      font-size: 15px;
+      padding: 8px;
+      border-radius: 6px;
     }
 
     .nav-links a:hover,
@@ -79,128 +65,160 @@
 
     .main-content {
       margin-left: 280px;
-      padding: 60px 56px;
+      padding: 60px;
       max-width: 900px;
     }
 
-    .main-content h2 {
+    h2 {
       font-size: 34px;
-      margin-top: 0;
-      margin-bottom: 24px;
-      color: #1f2a24;
+      margin-bottom: 20px;
     }
 
-    .main-content h3 {
-      font-size: 22px;
+    h3 {
       margin-top: 30px;
-      margin-bottom: 12px;
-      color: #1f2a24;
     }
 
-    .main-content p,
-    .main-content li {
-      font-size: 17px;
+    p, li {
       line-height: 1.8;
-      color: #2c372f;
     }
 
     ul {
-      padding-left: 22px;
-      margin-top: 8px;
+      padding-left: 20px;
     }
 
-    li {
-      margin-bottom: 10px;
+    /* Highlight section */
+    .highlight-section {
+      display: flex;
+      gap: 30px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #d7e3d8;
     }
 
-    a {
-      color: #1f2a24;
-      text-decoration: underline;
+    .highlight-images {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
 
-    a:hover {
-      color: #4f6f57;
+    .highlight-images img {
+      width: 180px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .highlight-text {
+      max-width: 520px;
     }
 
     @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
       .sidebar {
         position: relative;
         width: 100%;
         height: auto;
-        border-right: none;
-        border-bottom: 1px solid #8fae96;
       }
 
       .main-content {
         margin-left: 0;
-        padding: 32px 24px;
+        padding: 30px;
       }
 
-      .container {
+      .highlight-section {
         flex-direction: column;
+      }
+
+      .highlight-images {
+        flex-direction: row;
       }
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <img src="Profile.png" alt="Smitakshi Goswami" />
-      <h1>Smitakshi Goswami</h1>
-      <p>
-        PhD Candidate<br />
-        Physics & Astronomy<br />
-        Dartmouth College
-      </p>
+<div class="container">
 
-      <div class="nav-links">
-        <a href="index.html">About</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="activities.html">Professional Activities</a>
+  <aside class="sidebar">
+    <img src="Profile.png" alt="Profile">
+    <h1>Smitakshi Goswami</h1>
+    <p>PhD Candidate<br>Physics & Astronomy<br>Dartmouth College</p>
+
+    <div class="nav-links">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="activities.html">Professional Activities</a>
+    </div>
+
+    <div class="social-links">
+      <a href="https://scholar.google.com/citations?user=akgBNTIAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      <a href="https://www.linkedin.com/in/smitakshigoswami" target="_blank">LinkedIn</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <h2>Professional Activities</h2>
+
+    <p>
+      This page highlights selected conferences, workshops, and professional activities
+      related to my research in semiconductor materials for photovoltaic and infrared applications.
+    </p>
+
+    <!-- Highlight Section -->
+    <div class="highlight-section">
+
+      <div class="highlight-images">
+        <img src="MRS1.jpg" alt="MRS photo 1">
+        <img src="MRS2.jpg" alt="MRS photo 2">
       </div>
 
-      <div class="social-links">
-        <a href="https://scholar.google.com/citations?user=akgBNTIAAAAJ&hl=en" target="_blank">Google Scholar</a>
-        <a href="https://www.linkedin.com/in/smitakshigoswami" target="_blank">LinkedIn</a>
+      <div class="highlight-text">
+        <h3>🏆 Best Oral Presentation Award — MRS Spring 2025</h3>
+        <p>
+          Awarded Best Oral Presentation in Symposium EN05: Thin-Film Compound Semiconductor Photovoltaics
+          at the Materials Research Society (MRS) Spring Meeting 2025.
+          This work focused on thin-film CaZn<sub>2</sub>P<sub>2</sub> and SrZn<sub>2</sub>P<sub>2</sub>
+          for next-generation tandem solar cells.
+        </p>
       </div>
-    </aside>
 
-    <main class="main-content">
-      <h2>Professional Activities</h2>
+    </div>
 
-      <p>
-        This page highlights selected conferences, workshops, presentations, and professional development activities related to my research in semiconductor materials for photovoltaic and infrared applications.
-      </p>
+    <h3>Conferences & Presentations</h3>
+    <ul>
+      <li>IEEE Photovoltaic Specialists Conference (PVSC) — Submitted, 2026</li>
+      <li>Materials Research Society (MRS) Spring Meeting — 2025</li>
+      <li>Dartmouth Energy Symposium — 2024</li>
+    </ul>
 
-      <h3>Conferences & Presentations</h3>
-      <ul>
-        <li>IEEE Photovoltaic Specialists Conference (PVSC) — Submitted, 2026</li>
-        <li>Materials Research Society (MRS) Spring Meeting — Exploring Thin-Film CaZn2P2 and SrZn2P2—Optoelectronic Properties for Next-Generation Tandem Solar Cells, 2025</li>
-          <li>Materials Research Society (MRS) Spring Meeting — Exploring Thin-Film CaZn2P2 and SrZn2P2—Optoelectronic Properties for Next-Generation Tandem Solar Cells, 2025</li>
-        <li>Dartmouth Annual Symposium on Energy and Society, Dartmouth College-Lightning Talk on Clean Energy Materials for PV, 2024</li>
-      </ul>
+    <h3>Workshops & Training</h3>
+    <ul>
+      <li>
+        <a href="https://www.nlr.gov/pv/hands-on-photovoltaic-experience" target="_blank">
+          Hands-On Photovoltaic Experience (HOPE) Workshop
+        </a> — NREL, 2025
+      </li>
+      <li>Irving Institute Summer Energy Summit — 2025</li>
+      <li>NSF I-Corps — Cornell University, 2025</li>
+    </ul>
 
-      <h3>Workshops & Training</h3>
-      <ul>
-        <li>
-  <a href="https://www.nlr.gov/pv/hands-on-photovoltaic-experience" target="_blank">
-    Hands-On Photovoltaic Experience (HOPE) Workshop
-  </a> — National Renewable Energy Laboratory (NREL), 2025
-</li>
-        <li>Irving Institute Summer Energy Summit — Dartmouth College, 2025</li>
-        <li>NSF-I Corps, Cornell University, 2025</li>
-      </ul>
+    <h3>Awards & Honors</h3>
+    <ul>
+      <li>Best Oral Presentation Award — MRS, 2025</li>
+      <li>Irving Institute Student Grant — 2025</li>
+      <li>Guarini Travel Award — 2024</li>
+    </ul>
 
-      <h3>Awards & Honors</h3>
-      <ul>
-        <li>Best Oral Presentation Award in Symposium EN05: Thin-Film Compound Semiconductor Photovoltaics, MRS, Spring — 2025</li>
-        <li>Arthur L. Irving Institute for Energy and Society student grant Award— 2025</li>
-        <li>Guarini School Of Graduate Studies Travel Award— 2024</li>
-      </ul>
+  </main>
 
-      
-    </main>
-  </div>
+</div>
 </body>
 </html>
