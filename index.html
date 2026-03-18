@@ -96,10 +96,54 @@
       color: #2c372f;
     }
 
+    .main-content a {
+      color: #1f2a24;
+      text-decoration: underline;
+    }
+
+    .main-content a:hover {
+      color: #4f6f57;
+    }
+
+    .crystal-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 24px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .crystal-card {
+      background-color: #ffffff;
+      border: 1px solid #d7e3d8;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    .crystal-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      border-radius: 8px;
+      background-color: #f7f7f2;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .crystal-card p {
+      margin-top: 12px;
+      margin-bottom: 0;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #1f2a24;
+    }
+
     @media (max-width: 768px) {
       .sidebar {
         position: relative;
-        width: 200%;
+        width: 100%;
         height: auto;
         border-right: none;
         border-bottom: 1px solid #8fae96;
@@ -141,17 +185,47 @@
 
     <main class="main-content">
       <h2>About</h2>
-     <p>
-I am a PhD candidate in the <a href= "https://physics.dartmouth.edu/people/smitakshi-goswami" target="_blank">
-  Department of Physics and Astronomy</a> at Dartmouth College, working with 
-<a href="https://engineering.dartmouth.edu/community/faculty/jifeng-liu" target="_blank">
-Professor Jifeng Liu
-</a>. 
-My research focuses on the development and characterization of novel semiconducting materials for photovoltaic and infrared applications.
-</p>
+
+      <p>
+        I am a PhD candidate in the
+        <a href="https://physics.dartmouth.edu/people/smitakshi-goswami" target="_blank">
+          Department of Physics and Astronomy
+        </a>
+        at Dartmouth College, working with
+        <a href="https://engineering.dartmouth.edu/community/faculty/jifeng-liu" target="_blank">
+          Professor Jifeng Liu
+        </a>.
+        My research focuses on the development and characterization of novel semiconducting materials for photovoltaic and infrared applications.
+      </p>
+
       <p>
         I combine thin-film fabrication, photoluminescence, Raman spectroscopy, and electrical measurements to understand defect physics, carrier dynamics, and doping mechanisms in emerging absorber materials.
       </p>
+
+      <h2>Crystal Structures</h2>
+
+      <div class="crystal-gallery">
+        <div class="crystal-card">
+          <a href="images/crystal1.png" target="_blank">
+            <img src="images/crystal1.png" alt="AM2P2 crystal structure" />
+          </a>
+          <p>AM<sub>2</sub>P<sub>2</sub></p>
+        </div>
+
+        <div class="crystal-card">
+          <a href="images/crystal2.png" target="_blank">
+            <img src="images/crystal2.png" alt="ZnP2 crystal structure" />
+          </a>
+          <p>ZnP<sub>2</sub></p>
+        </div>
+
+        <div class="crystal-card">
+          <a href="images/crystal3.png" target="_blank">
+            <img src="images/crystal3.png" alt="MgP4 crystal structure" />
+          </a>
+          <p>MgP<sub>4</sub></p>
+        </div>
+      </div>
     </main>
   </div>
 </body>
