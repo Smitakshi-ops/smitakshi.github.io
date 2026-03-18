@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Activities | Smitakshi Goswami</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f2;
+      color: #1f2a24;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 280px;
+      background-color: #a3bfa8;
+      padding: 30px 20px;
+      box-sizing: border-box;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      overflow-y: auto;
+      border-right: 1px solid #8fae96;
+    }
+
+    .sidebar img {
+      width: 120px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    .sidebar h1 {
+      font-size: 28px;
+      margin: 10px 0 8px;
+      color: #1f2a24;
+    }
+
+    .sidebar p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      color: #1f2a24;
+    }
+
+    .nav-links,
+    .social-links {
+      margin-top: 18px;
+    }
+
+    .nav-links a,
+    .social-links a {
+      display: block;
+      text-decoration: none;
+      color: #1f2a24;
+      padding: 10px 12px;
+      margin: 8px 0;
+      border-radius: 8px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+      font-size: 15px;
+    }
+
+    .nav-links a:hover,
+    .social-links a:hover {
+      background-color: #8fae96;
+      color: white;
+    }
+
+    .main-content {
+      margin-left: 280px;
+      padding: 60px 56px;
+      max-width: 900px;
+    }
+
+    .main-content h2 {
+      font-size: 34px;
+      margin-top: 0;
+      margin-bottom: 24px;
+      color: #1f2a24;
+    }
+
+    .main-content h3 {
+      font-size: 22px;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      color: #1f2a24;
+    }
+
+    .main-content p,
+    .main-content li {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2c372f;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-top: 8px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #1f2a24;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #4f6f57;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #8fae96;
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding: 32px 24px;
+      }
+
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="Profile.png" alt="Smitakshi Goswami" />
+      <h1>Smitakshi Goswami</h1>
+      <p>
+        PhD Candidate<br />
+        Physics & Astronomy<br />
+        Dartmouth College
+      </p>
+
+      <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="activities.html">Professional Activities</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <h2>Professional Activities</h2>
+
+      <p>
+        This page highlights selected conferences, workshops, presentations, and professional development activities related to my research in semiconductor materials for photovoltaic and infrared applications.
+      </p>
+
+      <h3>Conferences & Presentations</h3>
+      <ul>
+        <li>Materials Research Society (MRS) Spring Meeting — Poster/Presentation Title, Year</li>
+        <li>IEEE Photovoltaic Specialists Conference (PVSC) — Poster/Presentation Title, Year</li>
+        <li>Departmental or institutional research presentations — Dartmouth College, Year</li>
+      </ul>
+
+      <h3>Workshops & Training</h3>
+      <ul>
+        <li>NREL HOPE Workshop — National Renewable Energy Laboratory, Year</li>
+        <li>Irving Institute Summer Energy Summit — Dartmouth College, Year</li>
+        <li>Other professional workshops, training programs, or summer schools</li>
+      </ul>
+
+      <h3>Awards & Honors</h3>
+      <ul>
+        <li>Travel award, fellowship, or student recognition — Year</li>
+        <li>Conference support award or research recognition — Year</li>
+      </ul>
+
+      <h3>Professional Development</h3>
+      <ul>
+        <li>Participation in interdisciplinary research collaborations</li>
+        <li>Engagement in scientific communication and outreach activities</li>
+        <li>Training in advanced optical and materials characterization techniques</li>
+      </ul>
+    </main>
+  </div>
+</body>
+</html>
